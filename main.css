@@ -1,0 +1,100 @@
+*{
+    box-sizing:     border-box;
+    font-size:      20px;
+    margin:         0;
+    padding:        0;
+    font-family: sans-serif;
+}
+
+header{
+    background-color:       rgb(255, 165, 240);
+    border:                 solid rgb(224, 107, 242);
+    border-width:            0 0 1rem 0;
+    display:        flex;
+        flex-flow:          column wrap;
+        justify-content:    center;
+        align-items:        center;
+    width:              100%;
+}
+.header__text--h1{
+    color:                  rgb(0, 0, 0);
+    font-size:              2rem;
+    margin-bottom:          3rem;
+}
+
+.btn{
+    border: 1px black solid;
+    background-color: rgb(253, 242, 208);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+.btn:hover{
+    background-color: rgb(248, 228, 166);
+}
+
+main{
+    display:        flex;
+        justify-content:        center;
+}
+
+/* game */
+.container-game{
+    background-color:   rgb(215, 215, 215);
+    border-radius:      .5rem;
+    height:             35rem;
+    margin:             3rem 0;
+    padding:            1rem;
+    width:              35rem;
+}
+
+
+.board{
+    cursor:         pointer;
+    display:        grid;
+        grid-template-columns:      repeat(3, 1fr);
+        grid-template-rows:         repeat(3, 10rem);
+        grid-gap:                   1rem;
+        justify-items:              center;
+        align-content:              space-around;
+    height:         100%;
+    width:          100%;
+}
+.box{
+    background-color: burlywood;
+    display:        flex !important;
+        justify-content:        center;
+        align-items:            center;
+    font-size:      3rem;
+    transition:     1s ease;
+    width:          100%;
+}
+.box:hover{
+    animation:      boxAnim 1.5s forwards;
+    box-shadow:     0 4px 12px -3px black;
+    background:     radial-gradient(circle at 100% , burlywood, rgba(144, 144, 144, 0.632));
+}
+
+@keyframes boxAnim {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+
+/* info */
+.container-info{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+}
+.info__box--h1 {
+    color: rgb(255, 77, 0);
+    font-size: 2rem;
+}
+.info__box--h1 i {
+    color: black;
+    font-size: 4rem;
+}

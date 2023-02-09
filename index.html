@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css" integrity="sha512-xnwMSDv7Nv5JmXb48gKD5ExVOnXAbNpBWVAXTo9BJWRJRygG8nwQI81o5bYe8myc9kiEF/qhMGPjkSsF06hyHA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>OXoxOX</title>
+</head>
+<body>
+    <header id="header">
+        <h1 class="header__text--h1">
+            OX ox OX
+        </h1>
+        <button class="btn" onclick="newGame()">new game </button>
+    </header>
+    <main>
+        <div class="container-game">
+            <div class="board">
+                <div class="box fa" data-row="0" data-column="0"></div>
+                <div class="box fa" data-row="0" data-column="1"></div>
+                <div class="box fa" data-row="0" data-column="2"></div>
+                <div class="box fa" data-row="1" data-column="0"></div>
+                <div class="box fa" data-row="1" data-column="1"></div>
+                <div class="box fa" data-row="1" data-column="2"></div>
+                <div class="box fa" data-row="2" data-column="0"></div>
+                <div class="box fa" data-row="2" data-column="1"></div>
+                <div class="box fa" data-row="2" data-column="2"></div>
+            </div>
+        </div>
+        <div class="container-info">
+            <div class="info__box">
+                <h1 class="info__box--h1">
+                    Player 1 <i class="fa fa-circle-o"></i>
+                </h1>
+                <h1 class="info__box--h1">
+                    Player 2 <i class="fa fa-times"></i>
+                </h1>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
